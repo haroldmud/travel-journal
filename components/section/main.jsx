@@ -14,10 +14,10 @@ export default function Main() {
               image={item.image}
               date={item.date}
               description={item.description}
+              map={item.map}
             />
           </div>
         )
-        
       }
     </div>
   )

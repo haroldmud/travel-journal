@@ -1,11 +1,11 @@
 export default function Card(props) {
   return(
     <section className="flex justify-center pt-[4rem]">
-      <div className="flex justify-between w-[95.5%] pl-12">
-        <div className="w-[26.8%]">
+      <div className="flex md:flex-row flex-col justify-between md:w-[95.5%] w-[87%] md:pl-12">
+        <div className="md:w-[26.8%] w-full">
           <img className="w-full" src={`/assets/images/${props.image}.png`} alt="mont fuji" />
         </div>
-        <div className=" w-[67.7%] flex flex-col justify-center">
+        <div className="md:w-[67.7%] md:mt-0 mt-4 flex flex-col justify-center">
           <div className="">
             <div className="flex gap-3 text-[12px] ">
               <div className="flex gap-2">
@@ -15,7 +15,7 @@ export default function Card(props) {
                 <p>{props.place}</p>
               </div>
               <div className="flex flex-col justify-center">
-              <a href="#" className="text-[#918e9b] text-[12px] font-[400] underline leading-[12px]">View on Google Maps</a>
+              <a target="_blank" href={props.map} className="text-[#918e9b] text-[12px] font-[400] underline leading-[12px]">View on Google Maps</a>
 
               </div>
             </div>
